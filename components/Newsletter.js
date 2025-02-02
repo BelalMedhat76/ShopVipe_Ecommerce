@@ -30,13 +30,13 @@ export default function Newsletter() {
           </p>
           
           <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-grow px-4 py-2 rounded-md border bg-background"
+                className="flex-grow px-4 py-2 w-[190px] rounded-md border bg-background"
                 required
               />
               <button
